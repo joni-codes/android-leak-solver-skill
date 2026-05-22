@@ -12,39 +12,15 @@ Drop `SKILL.md` into any AI coding assistant (opencode, Claude Code, Cursor, Win
 
 ---
 
-## Install
-
-### opencode
-
-Copy `SKILL.md` to your opencode skills directory:
-
-```bash
-mkdir -p ~/.config/opencode/skills/android-leak-solver
-curl -o ~/.config/opencode/skills/android-leak-solver/SKILL.md \
-  https://raw.githubusercontent.com/YOUR_USERNAME/android-leak-solver-skill/main/SKILL.md
-```
-
-Then load it in any session by telling your agent:
-
-```
-Load and apply the android-leak-solver skill. I will now paste a memory leak trace. Walk the full retention chain, identify the root cause node, classify the pattern, generate a surgical fix, verify your own reasoning using the self-check checklist, and output the result in the required format. Do not skip any phase.
-```
-
-### Claude Code / Cursor / Windsurf / any agent
-
-Copy the contents of `SKILL.md` and paste it directly into your conversation, or add it as a context file. Then tell your agent:
-
-```
-Load and apply the android-leak-solver skill. I will now paste a memory leak trace. Walk the full retention chain, identify the root cause node, classify the pattern, generate a surgical fix, verify your own reasoning using the self-check checklist, and output the result in the required format. Do not skip any phase.
-```
-
----
-
 ## Usage
 
-1. Load the skill using the sentence above
-2. Paste your LeakCanary trace (or hprof / logcat OOM output)
-3. The agent handles everything from there
+Paste the contents of `SKILL.md` into your agent, then tell it:
+
+```
+Load and apply the android-leak-solver skill. I will now paste a memory leak trace. Walk the full retention chain, identify the root cause node, classify the pattern, generate a surgical fix, verify your own reasoning using the self-check checklist, and output the result in the required format. Do not skip any phase.
+```
+
+Then paste your trace. The agent handles everything from there.
 
 ### Supported input formats
 
