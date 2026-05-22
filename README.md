@@ -12,9 +12,21 @@ Drop `SKILL.md` into any AI coding assistant (opencode, Claude Code, Cursor, Win
 
 ---
 
+## Install
+
+Paste this into your agent (Claude Code, opencode, Cursor, Windsurf, Gemini CLI — any tool):
+
+```
+Download https://raw.githubusercontent.com/joni-codes/android-leak-solver-skill/main/SKILL.md and install it as a skill/rule/context file in the correct location for your AI coding tool, then confirm where you placed it and how to activate it.
+```
+
+The agent knows what tool it's running in and will install it to the right place automatically.
+
+---
+
 ## Usage
 
-Paste the contents of `SKILL.md` into your agent, then tell it:
+Once installed, tell your agent:
 
 ```
 Load and apply the android-leak-solver skill. I will now paste a memory leak trace. Walk the full retention chain, identify the root cause node, classify the pattern, generate a surgical fix, verify your own reasoning using the self-check checklist, and output the result in the required format. Do not skip any phase.
