@@ -26,13 +26,11 @@ The agent knows what tool it's running in and will install it to the right place
 
 ## Usage
 
-Once installed, tell your agent:
+Once installed, just paste your LeakCanary trace, hprof dump, or OOM log — the skill triggers automatically.
 
-```
-Load and apply the android-leak-solver skill. I will now paste a memory leak trace. Walk the full retention chain, identify the root cause node, classify the pattern, generate a surgical fix, verify your own reasoning using the self-check checklist, and output the result in the required format. Do not skip any phase.
-```
+Or just say: **"fix this memory leak"** and paste your trace.
 
-Then paste your trace. The agent handles everything from there.
+No activation command needed.
 
 ### Supported input formats
 
